@@ -21,8 +21,11 @@ In this demo, i m using [BenchmarkDotNet](https://github.com/dotnet/BenchmarkDot
 >
 
 In order to run benchmarks, type these commands in your favorite terminal :
+>
 > :writing_hand: `.\App.exe --filter StringLittleCollection`
+>
 > :writing_hand: `.\App.exe --filter StringLargeCollection`
+>
 
 ```
 |                   Method |   N |        Mean |      Error |       StdDev |      Median |         Min |          Max | Rank |   Gen 0 |  Gen 1 | Gen 2 | Allocated |
