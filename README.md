@@ -1,3 +1,5 @@
+![.NET](https://github.com/aimenux/StringConcatenationBenchDemo/workflows/.NET/badge.svg)
+
 # StringConcatenationBenchDemo
 ```
 Benchmarking some string concatenation ways
