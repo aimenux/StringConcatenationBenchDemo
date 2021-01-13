@@ -44,5 +44,6 @@ In order to run benchmarks, type these commands in your favorite terminal :
 |       UsingStringBuilder | 100 | 1,067.79 ns |  19.917 ns |    33.820 ns | 1,059.53 ns | 1,021.79 ns |  1,161.06 ns |    3 |  0.9251 | 0.0134 |     - |    4360 B |
 | UsingForeachConcatMethod | 100 | 7,695.66 ns | 151.410 ns |   261.175 ns | 7,673.47 ns | 7,268.24 ns |  8,226.71 ns |    4 | 19.4244 | 0.2136 |     - |   91440 B |
 |        UsingPlusOperator | 100 | 9,836.09 ns | 618.623 ns | 1,794.739 ns | 9,297.54 ns | 7,419.45 ns | 15,033.67 ns |    5 | 19.4244 | 0.2136 |     - |   91440 B |
+```
 
 **`Tools`** : vs19, net 5.0
