@@ -5,7 +5,13 @@
 Benchmarking some string concatenation ways
 ```
 
-In this demo, i m using [BenchmarkDotNet](https://github.com/dotnet/BenchmarkDotNet) library in order to benchmark various ways of string concatenation.
+In this demo, i m using [BenchmarkDotNet](https://github.com/dotnet/BenchmarkDotNet) library in order to benchmark various ways of string concatenation :
+> :one: Using plus operator
+> :two: Using concat method
+> :three: Using join method
+> :four: Using format method
+> :five: Using interpolation
+> :six: Using string builder
 
 **`Tools`** : vs19, net core 3.1
 
