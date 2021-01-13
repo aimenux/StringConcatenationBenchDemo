@@ -6,7 +6,7 @@ namespace StringConcatenationBenchDemo
     {
         public static void Main()
         {
-            BenchmarkRunner.Run(typeof(Program).Assembly);
+            BenchmarkRunner.Run<StringLargeCollection>();
         }
     }
 }

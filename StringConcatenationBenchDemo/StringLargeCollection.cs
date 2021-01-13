@@ -5,6 +5,7 @@ using System.Text;
 
 namespace StringConcatenationBenchDemo
 {
+    [RankColumn]
     [MinColumn, MaxColumn]
     [Config(typeof(StringBenchConfig))]
     [Orderer(SummaryOrderPolicy.FastestToSlowest)]
