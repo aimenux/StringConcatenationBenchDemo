@@ -3,7 +3,7 @@
 Benchmarking some string concatenation ways
 ```
 
-In this demo, i m using BenchmarkDotNet library in order to benchmark various ways of string concatenation.
+In this demo, i m using [BenchmarkDotNet](https://github.com/dotnet/BenchmarkDotNet) library in order to benchmark various ways of string concatenation.
 
 **`Tools`** : vs19, net core 3.1
 
