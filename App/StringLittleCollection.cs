@@ -1,13 +1,9 @@
 ﻿using BenchmarkDotNet.Attributes;
-using BenchmarkDotNet.Order;
 using System.Text;
 
-namespace StringConcatenationBenchDemo
+namespace App
 {
-    [RankColumn]
-    [MinColumn, MaxColumn]
     [Config(typeof(StringBenchConfig))]
-    [Orderer(SummaryOrderPolicy.FastestToSlowest)]
     public class StringLittleCollection
     {
         private readonly string item1 = "string1";

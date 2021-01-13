@@ -2,17 +2,25 @@
 using BenchmarkDotNet.Configs;
 using BenchmarkDotNet.Diagnosers;
 using BenchmarkDotNet.Exporters;
+using BenchmarkDotNet.Loggers;
+using BenchmarkDotNet.Order;
 
-namespace StringConcatenationBenchDemo
+namespace App
 {
     public class StringBenchConfig : ManualConfig
     {
         public StringBenchConfig()
         {
             AddColumn(RankColumn.Arabic);
+            AddColumn(StatisticColumn.Min);
+            AddColumn(StatisticColumn.Max);
+            AddLogger(ConsoleLogger.Default);
             AddExporter(HtmlExporter.Default);
+            AddExporter(MarkdownExporter.GitHub);
             AddExporter(MarkdownExporter.Default);
             AddDiagnoser(MemoryDiagnoser.Default);
+            AddLogicalGroupRules(BenchmarkLogicalGroupRule.ByParams);
+            WithOrderer(new DefaultOrderer(SummaryOrderPolicy.FastestToSlowest));
         }
     }
 }

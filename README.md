@@ -2,7 +2,7 @@
 
 # StringConcatenationBenchDemo
 ```
-Benchmarking some string concatenation ways
+Benchmarking various ways of string concatenation
 ```
 
 In this demo, i m using [BenchmarkDotNet](https://github.com/dotnet/BenchmarkDotNet) library in order to benchmark various ways of string concatenation :
@@ -20,7 +20,11 @@ In this demo, i m using [BenchmarkDotNet](https://github.com/dotnet/BenchmarkDot
 > :six: Using string builder
 >
 
-**`Tools`** : vs19, net core 3.1
+In order to run benchmarks, type these commands in your favorite terminal :
+> - `.\App.exe --filter StringLittleCollection`
+> - `.\App.exe --filter StringLargeCollection`
+
+**`Tools`** : vs19, net 5.0
 
 ```
 |             Method |    N |          Mean |         Error |        StdDev |        Median |           Min |             Max | Rank |     Gen 0 | Gen 1 | Gen 2 | Allocated |
